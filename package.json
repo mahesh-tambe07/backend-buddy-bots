@@ -10,7 +10,8 @@
     "express": "^4.19.2",
     "dotenv": "^16.4.5",
     "cors": "^2.8.5",
-    "mysql2": "^3.10.1"
+    "mysql2": "^3.10.1",
+    "node-cron": "^3.0.3"
   },
   "repository": {
     "type": "git",
