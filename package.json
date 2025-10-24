@@ -12,7 +12,8 @@
     "cors": "^2.8.5",
     "mysql2": "^3.10.1",
     "node-cron": "^3.0.3",
-    "nodemailer": "^6.9.15"
+    "nodemailer": "^6.9.15",
+    "axios": "^1.7.9"
   },
   "repository": {
     "type": "git",
