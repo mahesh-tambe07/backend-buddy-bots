@@ -11,7 +11,8 @@
     "dotenv": "^16.4.5",
     "cors": "^2.8.5",
     "mysql2": "^3.10.1",
-    "node-cron": "^3.0.3"
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.15"
   },
   "repository": {
     "type": "git",
