@@ -1,3 +1,36 @@
+// 📁 backend/server.js
+
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const db = require("./config/db");
+
+dotenv.config();
+
+const app = express();
+
+// ✅ CORS setup
+app.use(
+  cors({
+    origin: [
+      process.env.FRONTEND_URL || "http://localhost:3000"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
+// ✅ Middleware
+app.use(express.json());
+
+// ✅ Simple route
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running successfully!");
+});
+
+// ✅ Start server
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
 // // 📁 vyommitra-app/backend/config/db.js
 
 
