@@ -14,7 +14,7 @@ const parseResumeRoute = require('./routes/parseResume');
 const reminderRoutes = require('./routes/reminder');
 
 const app = express();
-const PORT = process.env.DB_PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // ✅ CORS Config
 app.use(cors({
