@@ -14,7 +14,7 @@ const reminderRoutes = require('./routes/reminder');
 const app = express();
 
 // ✅ Use the correct port
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.DB_PORT || 5000;
 
 // ✅ CORS Config
 app.use(cors({
